@@ -2,6 +2,8 @@
 
 ### [Live Site](https://news-site-one.vercel.app/)
 
+![News Website](https://i.ibb.co/0D2776R/news.png)
+
 - Basic next js news app practice.
 - using news api
 
