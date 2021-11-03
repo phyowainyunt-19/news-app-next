@@ -1,6 +1,6 @@
 ## Next news app
 
-### [Live Site]()
+### [Live Site](https://news-site-one.vercel.app/)
 
 - Basic next js news app practice.
 - using news api
