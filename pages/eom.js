@@ -1,10 +1,13 @@
+import styles from '../styles/EOM.module.css';
+import { Toolbar } from '../components/toolbar';
+
 export const EOM = ({ employee }) => {
-    console.log(employee)
     return (
         <div className="page-container">
-            <div>
+            <Toolbar />
+            <div className={styles.main}>
                 <h1>Employee Of the Month</h1>
-                <div>
+                <div className={styles.employeeOfTheMonth}>
                     <h3> {employee.name} </h3>
                     <h6>{employee.position}</h6>
                     <img src={employee.image} />
@@ -17,7 +20,7 @@ export const EOM = ({ employee }) => {
 
 export const getServerSideProps = async pageContext => {
     const apiRes = await fetch(
-        'https://my-json-server.typicode.com/portexe/next-news/employeeOfTheMonth'
+        'https://my-json-server.typicode.com/phyowainyunt-19/news-app-next/employeeOfTheMonth'
     );
 
     //? turns into json 
