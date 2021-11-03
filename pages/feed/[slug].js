@@ -1,12 +1,16 @@
 import { Toolbar } from '../../components/toolbar';
 import { useRouter } from 'next/router';
 import styles from '../../styles/Feed.module.css';
+import SiteHeading from '../_heading';
+
+
 export const Feed = ({ pageNumber, articles }) => {
 
     const router = useRouter();
 
     return (
         <div className="page-container">
+            <SiteHeading />
             <Toolbar />
             <div className={styles.main}>
                 {articles.map((article, index) => (
